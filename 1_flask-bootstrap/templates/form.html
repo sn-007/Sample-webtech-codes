@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<title>AES</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../static/main.css">
+</head>
+
+<body align=center>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<h1 class="heading">Donor Details</h1>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-8">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="var_1" id="inputs">Name</label>
+					<div class="col-xs-7">
+						<input type="text" class="form-control" id="inp1" name="var_1" placeholder="name plox"
+							 required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="var_2" id="inputs">Phone Number</label>
+					<div class="col-xs-7">
+						<input type="text" class="form-control" id="inp2" name="var_2" placeholder="phone number plox"
+							 required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="var_3" id="inputs">Amount</label>
+					<div class="col-xs-7">
+						<textarea type="text" class="form-control" id="inp3" name="var_3"
+							placeholder="donation plox"></textarea>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<div class="col-xs-offset-3 col-xs-9">
+						<input type="submit" name="submit_button" class="btn btn-primary" value="DONATE" id="button"
+							onClick="myFunction()">
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+	<a href="http://127.0.0.1:5000/showlist"> show donor list </a>
+
+	
+	</div>
+
+
+</body>
+
+</html>
+
+<script>
+
+	function myFunction() {
+		var texta = document.getElementById("inp1").value;
+		var textb = document.getElementById("inp2").value;
+		var textc = document.getElementById("inp3").value;
+
+		alert(texta + " donated " + textc + " rupees");
+
+	}
+</script>
